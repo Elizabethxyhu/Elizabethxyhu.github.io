@@ -14,9 +14,9 @@ show_date: false
 ## About Me
 
 <p>
-  Hi, I am currently a <strong>Postdoctoral Associate</strong> at the
+  Hi, I am currently a Postdoctoral Associate at the
   Department of Data and Systems Engineering at the
-  <strong>University of Hong Kong (HKU)</strong>, supervised by
+  University of Hong Kong (HKU), supervised by
   <a href="https://zj-maxshen.github.io/">Prof. Max Shen</a> and
   <a href="https://sites.google.com/view/shaochong/">Prof. Shaochong Lin</a>.
   Previously, I was a Postdoctoral Associate in the Department of Decisions,
