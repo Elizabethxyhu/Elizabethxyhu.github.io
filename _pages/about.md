@@ -3,7 +3,7 @@ layout: single
 title: ""
 permalink: /
 author_profile: true
-classes: wide
+classes: wide homepage-compact
 comments: false
 share: false
 related: false
