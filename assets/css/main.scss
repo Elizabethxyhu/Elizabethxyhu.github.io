@@ -36,3 +36,8 @@
     "layout/archive",
     "layout/sidebar"
 ;
+
+/* Hide the site footer. */
+.page__footer {
+  display: none !important;
+}
