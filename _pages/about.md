@@ -43,7 +43,7 @@ show_date: false
 ## Research Interests
 
 <ul>
-  <li style="margin-bottom: 16px;">
+  <li">
     <strong><em><span style="color: darkred;">Decision-Focused Learning (Predict+Optimize).</span></em></strong>
     Developing learning frameworks that directly optimize downstream decision
     quality, integrating machine learning with mathematical optimization under
@@ -51,7 +51,7 @@ show_date: false
     multi-stage information revelation.
   </li>
 
-  <li style="margin-bottom: 16px;">
+  <li">
     <strong><em><span style="color: darkred;">Causal Learning and Decision Calibration.</span></em></strong>
     Developing causal calibration methods that leverage limited experimental
     data and observational information to improve prediction reliability under
@@ -59,7 +59,7 @@ show_date: false
     corrections into better optimization decisions.
   </li>
 
-  <li style="margin-bottom: 16px;">
+  <li">
     <strong><em><span style="color: darkred;">Exogenous-Aware Time Series Forecasting.</span></em></strong>
     Developing data-driven forecasting methods that capture periodic patterns,
     external events, and heterogeneous temporal dynamics, with applications to
