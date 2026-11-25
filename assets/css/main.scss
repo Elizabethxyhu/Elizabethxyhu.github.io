@@ -109,74 +109,109 @@
   }
 }
 
-/* Publications page only. */
+/* ==========================================
+   Publications: compact academic layout
+   ========================================== */
+
+/* Body typography: use the site's existing font family. */
 .publications-page .page__content {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
-/* Main page title. */
+/* Main heading. */
 .publications-page .page__title {
-  font-size: 26px;
-  line-height: 1.3;
-}
-
-/* Year headings. */
-.publications-page .page__content .publication-year {
-  font-size: 22px;
+  margin-bottom: 0.9em;
+  font-size: 25px;
   font-weight: 600;
   line-height: 1.3;
-  margin: 1.5em 0 0.8em;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+/* Smaller year headings, without dividing lines. */
+.publications-page .page__content .publication-year {
+  margin: 1.4em 0 0.65em;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 .publications-page .page__content .publication-year:first-child {
-  margin-top: 0.5em;
+  margin-top: 0;
 }
 
-/* Publication lists. */
+/* Plain bibliography list: no bullets or indentation. */
 .publications-page .page__content .publication-items {
-  list-style: disc;
-  padding-left: 1.2em;
+  list-style: none;
   margin: 0;
-  font-size: 1em;
+  padding: 0;
+  font-size: inherit;
 }
 
+/* Space between publications. */
 .publications-page .page__content .publication-item {
-  padding-left: 0.15em;
-  margin-bottom: 1.5em;
-  font-size: 1em;
+  margin: 0 0 1.25em;
+  padding: 0;
+  font-size: inherit;
   line-height: inherit;
 }
 
-/* Paper titles. */
-.publications-page .publication-title {
-  margin-bottom: 0.2em;
-  font-weight: 600;
+.publications-page .page__content .publication-item:last-child {
+  margin-bottom: 0;
 }
 
+/* Title: same size as the body, without heavy bold. */
+.publications-page .publication-title {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: inherit;
+}
+
+/* Keep titles restrained; resource links remain blue. */
 .publications-page .publication-title a {
+  color: inherit;
   text-decoration: none;
 }
 
 .publications-page .publication-title a:hover {
+  color: #2475a5;
   text-decoration: underline;
 }
 
-/* Authors and venues. */
+/* Authors and venue: compact, consistent text sizing. */
 .publications-page .publication-authors,
 .publications-page .publication-venue {
-  margin-bottom: 0.15em;
+  margin: 0;
+  font-size: 1em;
+  line-height: inherit;
 }
 
-/* Resource links. */
+/* Highlight your name and the venue abbreviation. */
+.publications-page .publication-authors strong,
+.publications-page .publication-venue strong {
+  font-weight: 700;
+}
+
+.publications-page .publication-authors u {
+  text-underline-offset: 2px;
+}
+
+/* Venue names retain the italics used in the HTML. */
+.publications-page .publication-venue em {
+  font-style: italic;
+}
+
+/* Simple bracketed links. */
 .publications-page .publication-links {
-  margin-top: 0.2em;
-  font-size: 0.94em;
+  margin: 0.1em 0 0;
+  font-size: 1em;
+  line-height: inherit;
 }
 
 .publications-page .publication-links a {
+  color: #2475a5;
   text-decoration: none;
 }
 
@@ -184,29 +219,47 @@
   text-decoration: underline;
 }
 
-/* Oral / Spotlight labels. */
+.publications-page .publication-title a:focus-visible,
+.publications-page .publication-links a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Oral / Spotlight: plain emphasis rather than badges. */
 .publications-page .publication-highlight {
-  display: inline-block;
-  margin-left: 0.4em;
-  padding: 0.05em 0.5em;
-  border-radius: 4px;
-  color: #9b1c20;
-  background-color: #fcebec;
-  font-size: 0.85em;
-  font-weight: 700;
+  display: inline;
+  margin-left: 0.35em;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: #a32323;
+  font-size: 1em;
+  font-weight: 600;
   font-style: normal;
   vertical-align: baseline;
 }
 
-/* Mobile layout. */
+/* Prevent long text from overflowing on small screens. */
+.publications-page .publication-list {
+  overflow-wrap: anywhere;
+}
+
+/* Mobile: retain readable body text. */
 @media (max-width: 600px) {
+  .publications-page .page__content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
   .publications-page .page__title {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .publications-page .page__content .publication-year {
-    font-size: 21px;
+    font-size: 19px;
   }
+}
 
   .publications-page .page__content .publication-item {
     margin-bottom: 1.3em;
