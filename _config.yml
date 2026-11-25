@@ -27,7 +27,7 @@ author:
   name             : "Xinyi Hu"
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral Associate, HKU"
-  location         : "Hong Kong"
+  # location         : "Hong Kong"
   # employer         : "Red Brick University"
   uri              : # URL
   email            : "Elizabethuxy@gmail.com" 
